@@ -1,0 +1,27 @@
+{
+  "name": "shopsimple-ecommerce",
+  "version": "1.0.0",
+  "description": "E-commerce website with DevOps practices",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . -l 3000",
+    "build": "echo 'Build complete'",
+    "test": "echo 'No tests configured'",
+    "lint": "echo 'Linting complete'",
+    "docker:build": "docker build -t ecommerce-app -f docker/Dockerfile .",
+    "docker:run": "docker run -p 8080:80 ecommerce-app",
+    "docker:compose": "docker-compose up"
+  },
+  "keywords": [
+    "ecommerce",
+    "devops",
+    "docker",
+    "ci-cd"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
